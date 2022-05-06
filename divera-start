@@ -1,0 +1,2 @@
+#!/bin/bash
+chromium-browser --noerrdialogs --kiosk --incognito $DIVERA_MONITOR_URL &>/dev/null &
