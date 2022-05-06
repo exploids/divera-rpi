@@ -1,2 +1,6 @@
 #!/bin/bash
+while ! ping -c 1 -W 5 divera247.com; do
+    echo "Waiting for divera247.com..."
+    sleep 5
+done
 chromium-browser --noerrdialogs --kiosk --incognito $DIVERA_MONITOR_URL &>/dev/null &
